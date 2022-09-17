@@ -71,14 +71,13 @@
 			</div>
 			<form name="myForm"  onsubmit="validateForm()" enctype="multipart/form-data" method="post" id="my-form"> 
 				<input type="text"  name="name"       id="name"  placeholder="name"     class="box">
-				<textarea           name="address"    id="Address"  placeholder="address"  class="box message" 
-				cols="30" rows="5"  ></textarea>
+				<!-- <textarea           name="address"    id="Address"  placeholder="address"  class="box message" 
+				  ></textarea> -->
+				<input type="number"name="address"    id="address"  placeholder="address"     class="box">
 				<input type="number"name="phone"      id="phone"  placeholder="phone"     class="box">
 				<input type="email" name="emailaddress"id="email" placeholder="email"    class="box">
 				<input type="text"  name="username"   id="username"  placeholder="username"  class="box">
-				
 				<input type="password"  name="password"    id="password"  placeholder="password"  class="box">
-				<input type="file" name="myfile" class="box" value="Requirement Document">
 				<button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
 			</form>
 		</div>
