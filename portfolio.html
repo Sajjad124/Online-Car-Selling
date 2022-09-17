@@ -28,10 +28,10 @@
 	<nav class="navbar">
 		<ul>
 			<li><a href="#home">Home</a></li>
+			<li><a href="#contact">Car Seller Registration</a></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#education">Education</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
 			<li><a href="#footer">End of page</a></li>
 		</ul>
 	</nav>
@@ -57,7 +57,7 @@
 
 
 
-<!-- Contact section start   -->
+<!-- Car Seller Registration section start   -->
 <section class="contact" id="contact">
 	<h1 class="heading"><span>Car Seller</span> Registration</h1>
 		<div class="row">
@@ -81,10 +81,43 @@
 				<button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
 			</form>
 		</div>
-		<div id="my-form-status" class="error">Successfully sent message</div>
+		
 		
 </section>
-<!-- Contact Section End -->
+<!-- Car Seller Registration End -->
+
+
+
+<section class="contact" id="contact">
+	<h1 class="heading"><span>Login and</span> Add Car</h1>
+		<div class="row">
+			<div class="content">
+				<h3 class="title">Login here</h3>
+				<div class="info">
+					<input type="username" name="username" value="username" class="box">
+					<input type="password" name="password" value="password" class="box">
+				</div>
+			</div>
+			<form name="myForm"  onsubmit="validateForm()" enctype="multipart/form-data" method="post" id="my-form"> 
+				<input type="text"  name="make" id="make"  placeholder="Enter name of company i.e Toyota"     class="box">
+				<input type="date"  name="model"    id="model"  placeholder="model"     class="box">
+				<input type="number"name="phone"      id="phone"  placeholder="phone"     class="box">
+				<input type="email" name="emailaddress"id="email" placeholder="email"    class="box">
+				<input type="text"  name="username"   id="username"  placeholder="username"  class="box">
+				<input type="password"  name="password"    id="password"  placeholder="password"  class="box">
+				<button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
+			</form>
+		</div>
+		
+		
+</section>
+
+
+
+
+
+
+
 
 <!-- About Section Start -->
 	<section class="about" id="about" style="background-image: url(car1.jpg); background-size: auto;  background-repeat: no-repeat;">
@@ -310,25 +343,35 @@
 
 <script>
 	function validateForm() {
-		let x = document.forms["myForm"]["name"].value;
-		let y = document.forms["myForm"]["emailaddress"].value;
-		let w = document.forms["myForm"]["project"].value;
-		let z = document.forms["myForm"]["message"].value;
+		let a = document.forms["myForm"]["name"].value;
+		let b = document.forms["myForm"]["address"].value;
+		let c = document.forms["myForm"]["phone"].value;
+		let d = document.forms["myForm"]["emailaddress"].value;
+		let e = document.forms["myForm"]["username"].value;
+		let f = document.forms["myForm"]["password"].value;
 
-		if (x == "" ) {
+		if (a == "" ) {
 			alert("Name must be filled out");
 			return false;
   		}
-		else if(y==""){
-			alert("email must be entered");
+		else if(b==""){
+			alert("address must be entered");
 			return false;
 		}
-		else if(w==""){
-			alert("project name must be entered");
+		else if(c==""){
+			alert("phone name must be entered");
 			return false;
 		}
-		else if(z==""){
-			alert("Message must be entered");
+		else if(d==""){
+			alert("emailaddress must be entered");
+			return false;
+		}
+		else if(e==""){
+			alert("username must be entered");
+			return false;
+		}
+		else if(f==""){
+			alert("password must be entered");
 			return false;
 		}
 		else{
