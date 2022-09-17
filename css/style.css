@@ -38,7 +38,8 @@ html::-webkit-scrollbar-thumb{
 }
 body{
 	/* background: #111; */
-	background: #4f76a1;
+	/*background: #4f76a1;*/
+	background: #bac9de;
 	overflow-x: hidden;
 	padding-left: 35rem;
 }
@@ -269,7 +270,8 @@ section{
 	display: flex;
 	align-items: center;
 	font-size: 2rem;
-	color: #eee;
+	/*color: #eee;*/
+	color: var(--green);
 	padding:1rem 0;
 	font-weight: normal;
 }
@@ -283,16 +285,18 @@ section{
 	margin:1rem 0;
 	background: #3333;
 	color: #fff;
-	text-transform: none;
 	font-size: 1.7rem;
 	width: 100%;
+	color: var(--green);
+}
+.info .box::placeholder{
+	color: var(--green);
 }
 
 .top img{
 	width: 5rem;
 	height: 5rem;
-	border-radius: 50%;
-	
+	border-radius: 50%;	
 }
 .top img:hover{
 	border:3px solid red;
@@ -355,7 +359,7 @@ header .navbar ul li a{
 	display: block;
 	padding: 1rem;
 	margin: 1.5rem 0;
-	background: rgba(0,0,0,0.2);
+	background: #bac9de;
 	color: black;
 	font-size: 1.5rem;
 	border-radius: 5rem;
@@ -419,6 +423,9 @@ section a button:hover{
 	}
 }
 @media (max-width:991px ){
+	.ss{
+
+	}
 	header{
 		left: -120% ;
 	}
@@ -444,7 +451,6 @@ section a button:hover{
 	header{
 		width: 100vw; 
 	}
-
 	.heading{
 		margin: 0 3rem;
 	}
@@ -463,11 +469,6 @@ section a button:hover{
 	.contact .row form{
 		margin:3rem 0;
 	}
-}
-.ss{
-	background: rgba(0,0,0,0.4);
-	padding: 5rem;
-	border-radius: 10px;
 }
 .home{
 	display: flex;
