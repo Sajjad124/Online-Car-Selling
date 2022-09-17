@@ -55,6 +55,38 @@
 	</section>
 <!-- Home Section End -->
 
+
+
+<!-- Contact section start   -->
+<section class="contact" id="contact">
+	<h1 class="heading"><span>Car Seller</span> Registration</h1>
+		<div class="row">
+			<div class="content">
+				<h3 class="title">Contact Info</h3>
+				<div class="info">
+					<h3><i class="fas fa-envelope"></i>anmolsanan2000@gmail.com</h3>
+					<h3><i class="fas fa-phone"></i>0444845434</h3>
+					<h3><i class="fas fa-map-marker-alt"></i>116A Hill End Rd, Doonside, 2767, NSW</h3>
+				</div>
+			</div>
+			<form name="myForm"  onsubmit="validateForm()" enctype="multipart/form-data" method="post" id="my-form"> 
+				<input type="text"  name="name"       id="name"  placeholder="name"     class="box">
+				<textarea           name="address"    id="Address"  placeholder="address"  class="box message" 
+				cols="30" rows="5"  ></textarea>
+				<input type="number"name="phone"      id="phone"  placeholder="phone"     class="box">
+				<input type="email" name="emailaddress"id="email" placeholder="email"    class="box">
+				<input type="text"  name="username"   id="username"  placeholder="username"  class="box">
+				
+				<input type="password"  name="password"    id="password"  placeholder="password"  class="box">
+				<input type="file" name="myfile" class="box" value="Requirement Document">
+				<button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
+			</form>
+		</div>
+		<div id="my-form-status" class="error">Successfully sent message</div>
+		
+</section>
+<!-- Contact Section End -->
+
 <!-- About Section Start -->
 	<section class="about" id="about" style="background-image: url(car1.jpg); background-size: auto;  background-repeat: no-repeat;">
 		<h1 class="heading"><span>about</span> me</h1>
@@ -197,31 +229,7 @@
 
 <!-- portfolio section end   -->
 
-<!-- Contact section start   -->
-<section class="contact" id="contact">
-	<h1 class="heading"><span>contact</span> me</h1>
-		<div class="row">
-			<div class="content">
-				<h3 class="title">Contact Info</h3>
-				<div class="info">
-					<h3><i class="fas fa-envelope"></i>anmolsanan2000@gmail.com</h3>
-					<h3><i class="fas fa-phone"></i>0444845434</h3>
-					<h3><i class="fas fa-map-marker-alt"></i>116A Hill End Rd, Doonside, 2767, NSW</h3>
-				</div>
-			</div>
-			<form name="myForm"  onsubmit="validateForm()" enctype="multipart/form-data" method="post" id="my-form"> 
-				<input type="text"  name="name"       id="name"  placeholder="name"     class="box">
-				<input type="email" name="emailaddress" id="email" placeholder="email"    class="box">
-				<input type="text"  name="project"    id="project"  placeholder="project"  class="box">
-				<textarea           name="message"    id="message"  placeholder="message"  class="box message" 
-				cols="30" rows="10"  ></textarea>
-				<input type="file" name="myfile" class="box" value="Requirement Document">
-				<button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
-			</form>
-		</div>
-		<div id="my-form-status" class="error">Successfully sent message</div>
-		
-</section>
+
 
 
 <section class="footer" id="footer">
