@@ -82,6 +82,14 @@ section{
 	color: var(--green);
 }
 
+.about-us{
+	text-align: justify;
+}
+.content .info {
+	padding: 10px;
+	font-size: 1.5rem;
+	color: var(--green);
+}
 .about .row{
 	display: flex;
 	align-items: center;
