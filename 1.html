@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <input type="text" id="box" class="box" />
+    <input type="text" id="box" class="box" />
+    
+    <button id="btn">Button</button>
+
+    <script src="index.js"></script>
+  </body>
+
+  <script>
+    const input = document.getElementById('box');
+
+input.addEventListener('click', function onClick(event) {
+  const input = document.getElementById('box');
+
+  input.style.backgroundColor = 'green';
+
+  // 👇️ optionally change the text color
+  // input.style.color = 'white';
+});
+  </script>
+</html>

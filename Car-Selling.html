@@ -15,6 +15,10 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
+<style>
+	.mySlides {display:none;}
+</style>
+
 </head>
 <body>
 <!-- header section starts-->
@@ -30,8 +34,7 @@
 			<li><a href="#home">Home</a></li>
 			<li><a href="#contact">Car Seller Registration</a></li>
 			<li><a href="#about">About</a></li>
-			<li><a href="#education">Education</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#search">search car</a></li>
 			<li><a href="#footer">End of page</a></li>
 		</ul>
 	</nav>
@@ -55,18 +58,18 @@
 <!-- Home Section End -->
 
 <!-- Car Seller Registration section start   -->
-<section class="contact" id="contact">
+<section class="registration" id="contact">
 	<h1 class="heading"><span>Car Seller Registration</span> <!-- Registration --></h1>
 		<div class="row">
 			
 			<form name="myForm" onsubmit="validateForm()" enctype="multipart/form-data" method="post" id="my-form"> 
-				<input type="text" name="name" id="name" placeholder="name" class="box">
-				<input type="text"name="address" id="address" placeholder="address" class="box">
-				<input type="number"name="phone" id="phone" placeholder="phone" class="box">
-				<input type="email" name="emailaddress"id="email" placeholder="email" class="box">
-				<input type="text" name="username" id="username" placeholder="username" class="box">
-				<input type="password" name="password" id="password" placeholder="password" class="box">
-				<button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
+				<input type="text" name="name" id="box" placeholder="name" class="box">
+				<input type="text"name="address" id="box" placeholder="address" class="box">
+				<input type="number"name="phone" id="box" placeholder="phone" class="box">
+				<input type="email" name="emailaddress"id="box" placeholder="email" class="box">
+				<input type="text" name="username" id="box" placeholder="username" class="box">
+				<input type="password" name="password" id="box" placeholder="password" class="box">
+				<button type="submit" class="btn" id="btn">send <i class="fas fa-paper-plane"></i></button>
 			</form>
 		</div>
 </section>
@@ -74,25 +77,25 @@
 
 
 
-<section class="contact" id="contact">
+<section class="registration" id="contact">
 	<h1 class="heading"><span>Login and</span> Add Car</h1>
 		<div class="row">
 			<div class="content">
 				<h3 class="title">Login here</h3>
 				<div class="info">
-					<input type="username" name="username" placeholder="username" class="box">
-					<input type="password" name="password" placeholder="password" class="box">
-					<button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
+					<input type="username" name="username" id="box" placeholder="username" class="box">
+					<input type="password" name="password" id="box" placeholder="password" class="box">
+					<button type="submit" class="btn" id="btn">send <i class="fas fa-paper-plane"></i></button>
 				</div>
 			</div>
 			<form name="myForm"  onsubmit="validateForm()" enctype="multipart/form-data" method="post" id="my-form"> 
-				<input type="text" name="make" id="make" placeholder="Enter name of company i.e Toyota" class="box">
-				<input type="date" name="model" id="model" placeholder="model" class="box">
-				<input type="number" min="1900" max="2022" step="1"  class="box" name="year" placeholder="Enter year from 1900-2022" />
-				<input type="number" name="mileage"id="mileage" placeholder="mileage" class="box">
-				<input type="text" name="location" id="location" placeholder="location" class="box">
-				<input type="number" min="1.00" max="10000000000.00" step="0.01" placeholder="Enter price in b/w 1.00-10000000000.00" name="price" class="box" />
-				<button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
+				<input type="text" name="make" id="box" placeholder="Enter name of company i.e Toyota" class="box">
+				<input type="date" name="model" id="box" placeholder="model" class="box">
+				<input type="number" min="1900" max="box" step="1"  class="box" name="year" placeholder="Enter year from 1900-2022" />
+				<input type="number" name="mileage"id="box" placeholder="mileage" class="box">
+				<input type="text" name="location" id="box" placeholder="location" class="box">
+				<input type="number" min="1.00" max="10000000000.00" step="0.01" id="box" placeholder="Enter price in b/w 1.00-10000000000.00" name="price" class="box" />
+				<button type="submit" class="btn" id="btn">send <i class="fas fa-paper-plane"></i></button>
 			</form>
 			<!-- <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div> -->
 		</div>
@@ -114,146 +117,68 @@
 
 					It was in 1979 that Tom Schwartz obtained his franchise from BMW. Prior to that, he had been deeply involved with BMWs as a technician. From 1971 – 1976, Tom ran an independent service repair business called The BMW Store. With those roots, his dealership has always placed a premium on customer service with the goal of assuring customers a hassle-free ownership experience. Today, nearly 125 employees at The BMW Store are dedicated to helping people discover the joys of driving a BMW.</p>
 				</div>
+				<div class="card-content">
+					<div class="card">
+					  <img class="pic2" src="Katelyn-Linnemann.jpg" style="width:100%;">
+					  <div class="container">
+					    <h4><b>Katelyn-Linnemann</b></h4> 
+					    <p>BMW CLIENT ADVISOR</p> 
+					  </div>
+					</div>
+					<div class="card">
+					  <img class="pic1" src="Dean-Stothes.jpg" style="width:100%;">
+					  <div class="container">
+					    <h4><b>Dean-Stothes</b></h4> 
+					    <p>BMW CLIENT ADVISOR</p> 
+					  </div>
+					</div>
+					<div class="card">
+					  <img class="pic3" src="Ric-Koresky.jpg" style="width:100%;">
+					  <div class="container">
+					    <h4><b>Ric-Koresky</b></h4> 
+					    <p>BMW CLIENT ADVISOR</p> 
+					  </div>
+					</div>
+					
+				</div>
 			</div>
 			
 			<div class="info">
 				<div class="content">
 				<h3 class="title">Contact Info</h3>
 				<div class="info">
-					<h3><i class="fas fa-envelope"></i>  bmwselling123@gmail.com</h3>
+					<h3><i class="fas fa-envelope"></i> bmwselling123@gmail.com</h3>
 					<h3><i class="fas fa-phone"></i>  0800 777 144</h3>
 					<h3><i class="fas fa-map-marker-alt"></i>  Plot 30-A, Sector 23, Korangi Industrial Area, Karachi, 74900</h3>
 				</div>
 			</div>
-			<!-- </div>
-			<p></p>
-			<div class="box">
-				<div class="box">
-				 	<span>1.5+</span>
-				 	<h3>years of Experience</h3>
-				 </div>
-			</div>
-		
-			<div class="counter">
-				 <div class="box">
-				 	<span>1.5+</span>
-				 	<h3>years of Experience</h3>
-				 </div>
-			</div>
-
-			<div class="counter">
-				 <div class="box">
-				 	<span>60+</span>
-				 	<h3>Tasks Completed</h3>
-				 </div>
-			</div>
-
-			<div class="counter">
-				 <div class="box">
-				 	<span>100+</span>
-				 	<h3>Happy Clients</h3>
-				 </div>
-			</div>
-			<div class="counter">
-				 <div class="box">
-				 	<span>14+ </span>
-				 	<h3>Years Education</h3>
-				 </div>
-			</div> -->
-		
 		</div>
 	</section>
 <!-- About Section End -->
  
-<!-- Education Section Start -->
-	<section class="education" id="education">
-		<h1 class="heading"><span>Academic</span> Record</h1>
-		<div class="box-container">
-			
-			<div class="box">
-				<i class="fas fa-graduation-cap"></i>
-				 <span>2016</span>
-				 <h3>Matriculation</h3>
-				 <p>Matriculation with 6.4(CGPA) from CBSE (Central Board of Secondary Education) in India.</p>
-			</div>
-			<div class="box">
-				<i class="fas fa-graduation-cap"></i>
-				 <span>Graphics</span>
-				 <h3>Graphic Designing</h3>
-				 <p> Have great knowledge about graphic designing with the mind blowing design. </p>
-			</div>
-			<div class="box">
-			<i class="fas fa-laptop"></i>
-				 <span>2021</span>
-				 <h3>Bachelor of Interactive Media</h3>
-				 <p> Currently am studying bachelor of interactive media. </p>
-			</div>
-			<div class="box">
-				<i class="fas fa-laptop-code"></i>
-				 <span>20-12-2019 to 05/09/2021</span>
-				 <h3>Tractor Operator </h3>
-				 <p> Work as Trolley Collector from 2019 to 2021.</p>
-			</div>
-			<div class="box">
-				<i class="fab fa-android"></i>
-				 <span>Web</span>
-				 <h3>Web Development </h3>
-				 <p> 1. Website Development.<br> 2.Strong physical and multi-tasking skills. 3.Developing productive relationship with other staff and customers.
-					4.Quick learner, friendly and helpful.
-				</p>
-			</div>
-			<div class="box">
-				<i class="fas fa-globe"></i>
-				 <span>Personal detail</span>
-				 <h3>contact</h3>
-				 <!-- <h5>Email</h5> -->
-				 <p> anmolsanan2000@gmail.com <br>M: 0444845434<br>(D.O.B: 24/10/2000)<br>Address: 116A Hill End Rd, Doonside, 2767, NSW</p>
-			</div>
-		</div>
-	</section>
-<!-- Education Section Start -->
 
-<!-- portfolio section start -->
-<section class="portfolio" id="portfolio">
-<div class="portfolio" id="portfolio">
-	<h1 class="heading"><span>My</span> Portfolio</h1>
-		<div class="box-container">
-			<div class="box">
-				<img src="images/im-1.jpg">
-			</div>
-			<div class="box">
-				<img src="images/im-2.jpg">
-			</div>
-			<div class="box">
-				<img src="images/anmol.jpeg">
-			</div>
-			<div class="box">
-				<img src="images/im-4.jpg">
-			</div>
-			<div class="box">
-				<img src="images/im-5.jpg">
-			</div>
-			<div class="box">
-				<img src="images/im-6.jpg">
-			</div>
-			<div class="box">
-				<img src="images/im-7.jpg">
-			</div>
-			<div class="box">
-				<img src="images/im-8.jpg">
-			</div>
-			<div class="box">
-				<img src="images/im-9.jpg">
-			</div>
-		</div>
+<!-- search car section start -->
+<section class="search" id="search">
+<div class="search" id="search">
+	<h1 class="heading"><span>Car Search By</span> Name & Model</h1>
 
+	<div class="dropdown">
+	  <button onclick="myFunction()" class="dropbtn" title="Click me to show cars list">Cars Drop Down List</button>
+	  <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="#about">BMW-M5-2021<img src="images/1.jpg" width="100%"></a>
+	    <a href="#base">BMW-M2-2021<img src="images/10.jpg" width="100%"></a>
+	    <a href="#blog">BMW-M1-2021<img src="images/11.jpg" width="100%"></a>
+	    <a href="#contact">BMW-M2-2021<img src="images/15.jpg" width="100%"></a>
+	    <a href="#custom">BMW-X3-2021<img src="images/1.jpg"width="100%" ></a>
+	    <a href="#support">BMW-X4-2021<img src="images/1.jpg" width="100%"></a>
+	    <a href="#tools">BMW-X5-2021<img src="images/1.jpg" width="100%"></a>
+	  </div>
+	</div>
 </div>
 </section>
 
-<!-- portfolio section end   -->
-
-
-
+<!-- search section end   -->
 
 <section class="footer" id="footer">
 	<div class="w3-content w3-display-container">
@@ -268,7 +193,7 @@
 	<div class="footer-detail">
 		
 		<div class="personal-detail">
-			<h2>Personal Info</h2>
+			<h2>Finance</h2>
 			<h3><a href="#home">Home</a></h3>
 			<h3><a href="#about">About</a></h3>
 			<h3><a href="#education">Education</a></h3>
@@ -276,27 +201,26 @@
 			<h3><a href="#contact">Contact</a></h3>
 		</div>
 		<div class="personal-detail">
-			<h2>Education</h2>
-			<h3><a href="#home">Matric 2015-16</a></h3>
-			<h3><a href="#about">Grade 12th, 2017-18 </a></h3>
-			<h3><a href="#education">BS Interactive Media (continued)</a></h3>
-			<h2>Institute</h2>
-			<h3><a href="#portfolio">CBSE India</a></h3>
+			<h2>Inventory</h2>
+			<h3><a href="https://www.southbaybmw.com/new-inventory/index.htm">New Vehicles</a></h3>
+			<h3><a href="https://www.southbaybmw.com/used-inventory/index.htm">Pre-Owned Vehicles </a></h3>
+			<h3><a href="https://www.southbaybmw.com/certified-inventory/index.htm">BMW Certified</a></h3>
+			<h3><a href="https://www.southbaybmw.com/featured-vehicles/new.htm">Featured Vehicles</a></h3>
 		</div>
 		
 		<div class="personal-detail">
 			<h2>Contact</h2>
-			<h3><a href="mailto:Anmolsanan2000@Gmail.Com">email</a></h3>
+			<h3><a href="mailto:bmwselling123@gmail.com">email</a></h3>
 			<h3><a href="#contact">Address</a></h3>
 			<h3><a href="#contact">phone</a></h3>
-			<h2>Name</h2>
-			<h3><a href="#portfolio">Anmol Dutt</a></h3>
+			<h2>Company Name</h2>
+			<h3><a href="#portfolio">BMW The Online Selling</a></h3>
 		</div>
 		<div class="personal-detail">
 			<h2>Ping me</h2>
-			<h3><i class="fas fa-envelope"></i>anmolsanan2000@gmail.com</h3>
-					<h3><i class="fas fa-phone"></i>0444845434</h3>
-					<h3><i class="fas fa-map-marker-alt"></i>116A Hill End Rd, Doonside, 2767, NSW</h3>
+				<h3><i class="fas fa-envelope"></i> bmwselling123@gmail.com</h3>
+				<h3><i class="fas fa-phone"></i>  0800 777 144</h3>
+				<h3><i class="fas fa-map-marker-alt"></i>  Plot 30-A, Sector 23, Korangi Industrial Area, Karachi, 74900</h3>
 		</div>
 	</div>
 
@@ -310,8 +234,8 @@
 		
 
 	<footer>
-		<p>Author: Anmol Dutt<br>
-		<a href="mailto:Anmolsanan2000@Gmail.Com">Anmolsanan2000@Gmail.Com</a></p>
+		<p>Owner: Camillo Castiglioni<br>
+		<a style="color: white" href="mailto: bmwselling123@gmail.com">bmwselling123@gmail.com</a></p>
 	  </footer>
 </section>
 
@@ -390,6 +314,45 @@
 	  x[slideIndex-1].style.display = "block";  
 	}
 	</script>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+
+<script >
+	 const input = document.getElementById('box');
+
+	input.addEventListener('click', function onClick(event) {
+  	const input = document.getElementById('box');
+
+  	input.style.backgroundColor = 'green';
+
+	  // 👇️ optionally change the text color
+	  // input.style.color = 'white';
+});
+</script>
 
 </body>
 </html>
