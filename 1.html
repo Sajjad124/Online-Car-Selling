@@ -5,8 +5,8 @@
   </head>
 
   <body>
-    <input type="text" id="box" class="box" />
-    <input type="text" id="box" class="box" />
+    <input type="text" id="name" class="box" name="box" />
+    <input type="text" id="password" class="box" name="box" />
     
     <button id="btn">Button</button>
 
@@ -14,15 +14,10 @@
   </body>
 
   <script>
-    const input = document.getElementById('box');
-
-input.addEventListener('click', function onClick(event) {
   const input = document.getElementById('box');
-
-  input.style.backgroundColor = 'green';
-
-  // 👇️ optionally change the text color
-  // input.style.color = 'white';
+  input.addEventListener('click', function onClick(event) {
+  const name = document.getElementById('box');
+  name.style.backgroundColor = 'green';
 });
   </script>
 </html>
