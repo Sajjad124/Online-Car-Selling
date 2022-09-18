@@ -1,360 +1,391 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>BMW</title>
-<!-- font awesome cdn  link -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<!-- font awesome cdn  link -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<!-- custom css file link -->
-<link rel="stylesheet" type="text/css" href="css\style.css">
-<!-- animation link from animate.css site	 -->
-<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- custom css file link -->
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<!-- animation link from animate.css site	 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-<style>
-	.mySlides {display:none;}
-</style>
+	<style>
+		.mySlides {
+			display: none;
+		}
+	</style>
 
 </head>
+
 <body>
-<!-- header section starts-->
+	<!-- header section starts-->
 
-<header>
-	<div class="user">
-		<img src="images/logo.png" alt="">
-		<h3 class="name">BMW</h3>
-		<p class="post">The Online Selling</p>
-	</div>
-	<nav class="navbar">
-		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#contact">Car Seller Registration</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#search">search car</a></li>
-			<li><a href="#footer">End of page</a></li>
-		</ul>
-	</nav>
-</header>
+	<header>
+		<div class="user">
+			<img src="images/logo.png" alt="">
+			<h3 class="name">BMW</h3>
+			<p class="post">The Online Selling</p>
+		</div>
+		<nav class="navbar">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#contact">Car Seller Registration</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#search">search car</a></li>
+				<li><a href="#footer">End of page</a></li>
+			</ul>
+		</nav>
+	</header>
 
-<!-- header section ends -->
-<div id="menu" class="fas fa-bars"></div>
+	<!-- header section ends -->
+	<div id="menu" class="fas fa-bars"></div>
 
-<!-- Home Section Starts -->
-	<section class="home animate__animated animate__bounceInRight" id="home" style="background-image: url(bg2.jpg); background-size: auto;  background-repeat: no-repeat;" >
+	<!-- Home Section Starts -->
+	<section class="home animate__animated animate__bounceInRight" id="home"
+		style="background-image: url(bg2.jpg); background-size: auto;  background-repeat: no-repeat;">
 
-	<div class="first">
-		<h3>Hi THERE...!</h3>
-		<h1>I'M <span>BMW Seller</span></h1>
-		<p>
-			I am an enthusiastic and motivated individual with a keen interest in Multimedia industry. I believe that my experience and extensive training across a board range of industries would make me an asset to any company.
-		</p>
-		<a href="#about"><button class="btn"  title="Click me">about me<i class="fa fa-user"></i></button></a>
-	</div>
+		<div class="first">
+			<h3>Hi THERE...!</h3>
+			<h1>I'M <span>BMW Seller</span></h1>
+			<p>
+				I am an enthusiastic and motivated individual with a keen interest in Multimedia industry. I believe
+				that my experience and extensive training across a board range of industries would make me an asset to
+				any company.
+			</p>
+			<a href="#about"><button class="btn" title="Click me">about me<i class="fa fa-user"></i></button></a>
+		</div>
 	</section>
-<!-- Home Section End -->
+	<!-- Home Section End -->
 
-<!-- Car Seller Registration section start   -->
-<section class="registration" id="contact">
-	<h1 class="heading"><span>Car Seller Registration</span> <!-- Registration --></h1>
+	<!-- Car Seller Registration section start   -->
+	<section class="registration" id="contact">
+		<h1 class="heading"><span>Car Seller Registration</span> <!-- Registration -->
+		</h1>
 		<div class="row">
-			
-			<form name="myForm" onsubmit="validateForm()" enctype="multipart/form-data" method="post" id="my-form"> 
-				<input type="text" name="name" id="box" placeholder="name" class="box">
-				<input type="text"name="address" id="box" placeholder="address" class="box">
-				<input type="number"name="phone" id="box" placeholder="phone" class="box">
-				<input type="email" name="emailaddress"id="box" placeholder="email" class="box">
-				<input type="text" name="username" id="box" placeholder="username" class="box">
-				<input type="password" name="password" id="box" placeholder="password" class="box">
+
+			<form name="myForm" onsubmit="validateForm()" enctype="multipart/form-data" method="post" id="my-form">
+				<input type="text" name="name" placeholder="name" class="box">
+				<input type="text" name="address" placeholder="address" class="box">
+				<input type="number" name="phone" placeholder="phone" class="box">
+				<input type="email" name="emailaddress" placeholder="email" class="box">
+				<input type="text" name="username" placeholder="username" class="box">
+				<input type="password" name="password" placeholder="password" class="box">
 				<button type="submit" class="btn" id="btn">send <i class="fas fa-paper-plane"></i></button>
 			</form>
 		</div>
-</section>
-<!-- Car Seller Registration End -->
+	</section>
+	<!-- Car Seller Registration End -->
 
 
 
-<section class="registration" id="contact">
-	<h1 class="heading"><span>Login and</span> Add Car</h1>
+	<section class="registration" id="contact">
+		<h1 class="heading"><span>Login and</span> Add Car</h1>
 		<div class="row">
 			<div class="content">
 				<h3 class="title">Login here</h3>
 				<div class="info">
-					<input type="username" name="username" id="box" placeholder="username" class="box">
-					<input type="password" name="password" id="box" placeholder="password" class="box">
+					<input type="username" name="username" placeholder="username" class="box">
+					<input type="password" name="password" placeholder="password" class="box">
 					<button type="submit" class="btn" id="btn">send <i class="fas fa-paper-plane"></i></button>
 				</div>
 			</div>
-			<form name="myForm"  onsubmit="validateForm()" enctype="multipart/form-data" method="post" id="my-form"> 
-				<input type="text" name="make" id="box" placeholder="Enter name of company i.e Toyota" class="box">
-				<input type="date" name="model" id="box" placeholder="model" class="box">
-				<input type="number" min="1900" max="box" step="1"  class="box" name="year" placeholder="Enter year from 1900-2022" />
-				<input type="number" name="mileage"id="box" placeholder="mileage" class="box">
-				<input type="text" name="location" id="box" placeholder="location" class="box">
-				<input type="number" min="1.00" max="10000000000.00" step="0.01" id="box" placeholder="Enter price in b/w 1.00-10000000000.00" name="price" class="box" />
+			<form name="myForm" onsubmit="validateForm()" enctype="multipart/form-data" method="post" id="my-form">
+				<input type="text" name="make" placeholder="Enter name of company i.e Toyota" class="box">
+				<input type="date" name="model" placeholder="model" class="box">
+				<input type="number" min="1900" max="box" step="1" class="box" name="year"
+					placeholder="Enter year from 1900-2022" />
+				<input type="number" name="mileage" placeholder="mileage" class="box">
+				<input type="text" name="location" placeholder="location" class="box">
+				<input type="number" min="1.00" max="10000000000.00" step="0.01"
+					placeholder="Enter price in b/w 1.00-10000000000.00" name="price" class="box" />
 				<button type="submit" class="btn" id="btn">send <i class="fas fa-paper-plane"></i></button>
 			</form>
 		</div>
-		
-		
-</section>
 
 
-<!-- About Section Start -->
+	</section>
+
+
+	<!-- About Section Start -->
 	<section class="about" id="about">
 		<h1 class="heading"><span>about</span> me</h1>
-		
+
 		<div class="row">
 			<div class="info">
 				<div class="content">
-				<h3 class="title">WELCOME TO THE BMW STORE</h3>
-				<div class="info">
-					<p class="about-us">Here at The BMW Store we’ve done a lot in 4 decades and are very proud of our past and looking forward to an incredible future. Our customers have taken us a long way but here’s a little bit about how it all started!
+					<h3 class="title">WELCOME TO THE BMW STORE</h3>
+					<div class="info">
+						<p class="about-us">Here at The BMW Store we’ve done a lot in 4 decades and are very proud of
+							our past and looking forward to an incredible future. Our customers have taken us a long way
+							but here’s a little bit about how it all started!
 
-					It was in 1979 that Tom Schwartz obtained his franchise from BMW. Prior to that, he had been deeply involved with BMWs as a technician. From 1971 – 1976, Tom ran an independent service repair business called The BMW Store. With those roots, his dealership has always placed a premium on customer service with the goal of assuring customers a hassle-free ownership experience. Today, nearly 125 employees at The BMW Store are dedicated to helping people discover the joys of driving a BMW.</p>
+							It was in 1979 that Tom Schwartz obtained his franchise from BMW. Prior to that, he had been
+							deeply involved with BMWs as a technician. From 1971 – 1976, Tom ran an independent service
+							repair business called The BMW Store. With those roots, his dealership has always placed a
+							premium on customer service with the goal of assuring customers a hassle-free ownership
+							experience. Today, nearly 125 employees at The BMW Store are dedicated to helping people
+							discover the joys of driving a BMW.</p>
+					</div>
+					<div class="card-content">
+						<div class="card">
+							<img class="pic2" src="Katelyn-Linnemann.jpg" style="width:100%;">
+							<div class="container">
+								<h4><b>Katelyn-Linnemann</b></h4>
+								<p>BMW CLIENT ADVISOR</p>
+							</div>
+						</div>
+						<div class="card">
+							<img class="pic1" src="Dean-Stothes.jpg" style="width:100%;">
+							<div class="container">
+								<h4><b>Dean-Stothes</b></h4>
+								<p>BMW CLIENT ADVISOR</p>
+							</div>
+						</div>
+						<div class="card">
+							<img class="pic3" src="Ric-Koresky.jpg" style="width:100%;">
+							<div class="container">
+								<h4><b>Ric-Koresky</b></h4>
+								<p>BMW CLIENT ADVISOR</p>
+							</div>
+						</div>
+
+					</div>
 				</div>
-				<div class="card-content">
-					<div class="card">
-					  <img class="pic2" src="Katelyn-Linnemann.jpg" style="width:100%;">
-					  <div class="container">
-					    <h4><b>Katelyn-Linnemann</b></h4> 
-					    <p>BMW CLIENT ADVISOR</p> 
-					  </div>
-					</div>
-					<div class="card">
-					  <img class="pic1" src="Dean-Stothes.jpg" style="width:100%;">
-					  <div class="container">
-					    <h4><b>Dean-Stothes</b></h4> 
-					    <p>BMW CLIENT ADVISOR</p> 
-					  </div>
-					</div>
-					<div class="card">
-					  <img class="pic3" src="Ric-Koresky.jpg" style="width:100%;">
-					  <div class="container">
-					    <h4><b>Ric-Koresky</b></h4> 
-					    <p>BMW CLIENT ADVISOR</p> 
-					  </div>
-					</div>
-					
-				</div>
-			</div>
-			
-			<div class="info">
-				<div class="content">
-				<h3 class="title">Contact Info</h3>
+
 				<div class="info">
-					<h3><i class="fas fa-envelope"></i> bmwselling123@gmail.com</h3>
-					<h3><i class="fas fa-phone"></i>  0800 777 144</h3>
-					<h3><i class="fas fa-map-marker-alt"></i>  Plot 30-A, Sector 23, Korangi Industrial Area, Karachi, 74900</h3>
+					<div class="content">
+						<h3 class="title">Contact Info</h3>
+						<div class="info">
+							<h3><i class="fas fa-envelope"></i> bmwselling123@gmail.com</h3>
+							<h3><i class="fas fa-phone"></i> 0800 777 144</h3>
+							<h3><i class="fas fa-map-marker-alt"></i> Plot 30-A, Sector 23, Korangi Industrial Area,
+								Karachi, 74900</h3>
+						</div>
+					</div>
+				</div>
+	</section>
+	<!-- About Section End -->
+
+
+	<!-- search car section start -->
+	<section class="search" id="search">
+		<div class="search" id="search">
+			<h1 class="heading"><span>Car Search By</span> Name & Model</h1>
+
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn" title="Click me to show cars list">Cars Drop Down
+					List</button>
+				<div id="myDropdown" class="dropdown-content">
+					<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+					<a href="#about">BMW-M5-2021<img src="images/1.jpg" width="100%"></a>
+					<a href="#base">BMW-M2-2021<img src="images/10.jpg" width="100%"></a>
+					<a href="#blog">BMW-M1-2021<img src="images/11.jpg" width="100%"></a>
+					<a href="#contact">BMW-M2-2021<img src="images/15.jpg" width="100%"></a>
+					<a href="#custom">BMW-X3-2021<img src="images/1.jpg" width="100%"></a>
+					<a href="#support">BMW-X4-2021<img src="images/1.jpg" width="100%"></a>
+					<a href="#tools">BMW-X5-2021<img src="images/1.jpg" width="100%"></a>
 				</div>
 			</div>
 		</div>
 	</section>
-<!-- About Section End -->
- 
-
-<!-- search car section start -->
-<section class="search" id="search">
-<div class="search" id="search">
-	<h1 class="heading"><span>Car Search By</span> Name & Model</h1>
-
-	<div class="dropdown">
-	  <button onclick="myFunction()" class="dropbtn" title="Click me to show cars list">Cars Drop Down List</button>
-	  <div id="myDropdown" class="dropdown-content">
-	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-	    <a href="#about">BMW-M5-2021<img src="images/1.jpg" width="100%"></a>
-	    <a href="#base">BMW-M2-2021<img src="images/10.jpg" width="100%"></a>
-	    <a href="#blog">BMW-M1-2021<img src="images/11.jpg" width="100%"></a>
-	    <a href="#contact">BMW-M2-2021<img src="images/15.jpg" width="100%"></a>
-	    <a href="#custom">BMW-X3-2021<img src="images/1.jpg"width="100%" ></a>
-	    <a href="#support">BMW-X4-2021<img src="images/1.jpg" width="100%"></a>
-	    <a href="#tools">BMW-X5-2021<img src="images/1.jpg" width="100%"></a>
-	  </div>
-	</div>
-</div>
-</section>
-<!-- search section end   -->
+	<!-- search section end   -->
 
 
-<section class="footer" id="footer">
+	<section class="footer" id="footer">
 
 
-	<div class="w3-content w3-display-container">
-		<img class="mySlides" src="Images/img_snow_wide.jpg" style="width:100%">
-		<img class="mySlides" src="Images/img_mountains_wide.jpg" style="width:100%">
-		<img class="mySlides" src="Images/img_nature_wide.jpg" style="width:100%">
-		<img class="mySlides" src="Images/img_woods_wide.jpg" style="width:100%">
-	  
-		<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-	</div>
-	<div class="footer-detail">
-		
-		<div class="personal-detail">
-			<h2>Finance</h2>
-			<h3><a href="#home">Home</a></h3>
-			<h3><a href="#about">About</a></h3>
-			<h3><a href="#education">Education</a></h3>
-			<h3><a href="#portfolio">Portfolio</a></h3>
-			<h3><a href="#contact">Contact</a></h3>
+		<div class="w3-content w3-display-container">
+			<img class="mySlides" src="Images/img_snow_wide.jpg" style="width:100%">
+			<img class="mySlides" src="Images/img_mountains_wide.jpg" style="width:100%">
+			<img class="mySlides" src="Images/img_nature_wide.jpg" style="width:100%">
+			<img class="mySlides" src="Images/img_woods_wide.jpg" style="width:100%">
+
+			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 		</div>
-		<div class="personal-detail">
-			<h2>Inventory</h2>
-			<h3><a href="https://www.southbaybmw.com/new-inventory/index.htm">New Vehicles</a></h3>
-			<h3><a href="https://www.southbaybmw.com/used-inventory/index.htm">Pre-Owned Vehicles </a></h3>
-			<h3><a href="https://www.southbaybmw.com/certified-inventory/index.htm">BMW Certified</a></h3>
-			<h3><a href="https://www.southbaybmw.com/featured-vehicles/new.htm">Featured Vehicles</a></h3>
-		</div>
-		
-		<div class="personal-detail">
-			<h2>Contact</h2>
-			<h3><a href="mailto:bmwselling123@gmail.com">email</a></h3>
-			<h3><a href="#contact">Address</a></h3>
-			<h3><a href="#contact">phone</a></h3>
-			<h2>Company Name</h2>
-			<h3><a href="#portfolio">BMW The Online Selling</a></h3>
-		</div>
-		<div class="personal-detail">
-			<h2>Ping me</h2>
+		<div class="footer-detail">
+
+			<div class="personal-detail">
+				<h2>Finance</h2>
+				<h3><a href="#home">Home</a></h3>
+				<h3><a href="#about">About</a></h3>
+				<h3><a href="#education">Education</a></h3>
+				<h3><a href="#portfolio">Portfolio</a></h3>
+				<h3><a href="#contact">Contact</a></h3>
+			</div>
+			<div class="personal-detail">
+				<h2>Inventory</h2>
+				<h3><a href="https://www.southbaybmw.com/new-inventory/index.htm">New Vehicles</a></h3>
+				<h3><a href="https://www.southbaybmw.com/used-inventory/index.htm">Pre-Owned Vehicles </a></h3>
+				<h3><a href="https://www.southbaybmw.com/certified-inventory/index.htm">BMW Certified</a></h3>
+				<h3><a href="https://www.southbaybmw.com/featured-vehicles/new.htm">Featured Vehicles</a></h3>
+			</div>
+
+			<div class="personal-detail">
+				<h2>Contact</h2>
+				<h3><a href="mailto:bmwselling123@gmail.com">email</a></h3>
+				<h3><a href="#contact">Address</a></h3>
+				<h3><a href="#contact">phone</a></h3>
+				<h2>Company Name</h2>
+				<h3><a href="#portfolio">BMW The Online Selling</a></h3>
+			</div>
+			<div class="personal-detail">
+				<h2>Ping me</h2>
 				<h3><i class="fas fa-envelope"></i> bmwselling123@gmail.com</h3>
-				<h3><i class="fas fa-phone"></i>  0800 777 144</h3>
-				<h3><i class="fas fa-map-marker-alt"></i>  Plot 30-A, Sector 23, Korangi Industrial Area, Karachi, 74900</h3>
+				<h3><i class="fas fa-phone"></i> 0800 777 144</h3>
+				<h3><i class="fas fa-map-marker-alt"></i> Plot 30-A, Sector 23, Korangi Industrial Area, Karachi, 74900
+				</h3>
+			</div>
 		</div>
-	</div>
 
-	<div class="social-sites">
+		<div class="social-sites">
 			<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
 			<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
 			<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
 			<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
 			<a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+		</div>
+
+
+		<footer>
+			<p>Owner: Camillo Castiglioni<br>
+				<a style="color: white" href="mailto: bmwselling123@gmail.com">bmwselling123@gmail.com</a>
+			</p>
+		</footer>
+	</section>
+
+
+	<!-- Contact section end     -->
+	<!-- Scroll Top Button -->
+	<div class="whatsaap_float animate__animated animate__pulse">
+		<a href="https://wa.me/+61444845434?text=Hi, How can i help you?" target="_blank"><img
+				src=".\images\whatsaap.png" width="50pxx" title="click to chat on Whatsaap"
+				class="whatsaap-float-btn"></a>
 	</div>
-		
 
-	<footer>
-		<p>Owner: Camillo Castiglioni<br>
-		<a style="color: white" href="mailto: bmwselling123@gmail.com">bmwselling123@gmail.com</a></p>
-	  </footer>
-</section>
+	<a href="#home" class="top animate__animated animate__fadeInUp">
+		<img src="images/scroll7.png" alt="">
+	</a>
 
+	<!-- 	jquery cdn link  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!-- Contact section end     -->
-<!-- Scroll Top Button -->
-<div class="whatsaap_float animate__animated animate__pulse">
-	<a href="https://wa.me/+61444845434?text=Hi, How can i help you?" target="_blank"><img src=".\images\whatsaap.png" width="50pxx" title="click to chat on Whatsaap" class="whatsaap-float-btn"></a>
-</div>
-
-<a href="#home" class="top animate__animated animate__fadeInUp">
-	<img src="images/scroll7.png" alt="">
-</a>
-
-<!-- 	jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- Jquery cdn link -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Jquery cdn link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-<script>
-	function validateForm() {
-		let a = document.forms["myForm"]["name"].value;
-		let b = document.forms["myForm"]["address"].value;
-		let c = document.forms["myForm"]["phone"].value;
-		let d = document.forms["myForm"]["emailaddress"].value;
-		let e = document.forms["myForm"]["username"].value;
-		let f = document.forms["myForm"]["password"].value;
+	<script>
+		function validateForm() {
+			let a = document.forms["myForm"]["name"].value;
+			let b = document.forms["myForm"]["address"].value;
+			let c = document.forms["myForm"]["phone"].value;
+			let d = document.forms["myForm"]["emailaddress"].value;
+			let e = document.forms["myForm"]["username"].value;
+			let f = document.forms["myForm"]["password"].value;
 
-		if (a == "" ) {
-			alert("Name must be filled out");
-			return false;
-  		}
-		else if(b==""){
-			alert("address must be entered");
-			return false;
+			if (a == "") {
+				alert("Name must be filled out");
+				return false;
+			}
+			else if (b == "") {
+				alert("address must be entered");
+				return false;
+			}
+			else if (c == "") {
+				alert("phone name must be entered");
+				return false;
+			}
+			else if (d == "") {
+				alert("emailaddress must be entered");
+				return false;
+			}
+			else if (e == "") {
+				alert("username must be entered");
+				return false;
+			}
+			else if (f == "") {
+				alert("password must be entered");
+				return false;
+			}
+			else {
+				return confirm('Are you sure you want to submit form');
+			}
 		}
-		else if(c==""){
-			alert("phone name must be entered");
-			return false;
+	</script>
+	<!-- Slider script reference from w3school -->
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
 		}
-		else if(d==""){
-			alert("emailaddress must be entered");
-			return false;
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) { slideIndex = 1 }
+			if (n < 1) { slideIndex = x.length }
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex - 1].style.display = "block";
 		}
-		else if(e==""){
-			alert("username must be entered");
-			return false;
-		}
-		else if(f==""){
-			alert("password must be entered");
-			return false;
-		}
-		else{
-			return confirm('Are you sure you want to submit form');
-		}
-}
-</script>
-<!-- Slider script reference from w3school -->
-<script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
-	
-	function plusDivs(n) {
-	  showDivs(slideIndex += n);
-	}
-	
-	function showDivs(n) {
-	  var i;
-	  var x = document.getElementsByClassName("mySlides");
-	  if (n > x.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = x.length}
-	  for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";  
-	  }
-	  x[slideIndex-1].style.display = "block";  
-	}
 	</script>
 
 
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+	<script>
+		/* When the user clicks on the button,
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
 
-function filterFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("a");
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-  }
-}
-</script>
+		function filterFunction() {
+			var input, filter, ul, li, a, i;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			div = document.getElementById("myDropdown");
+			a = div.getElementsByTagName("a");
+			for (i = 0; i < a.length; i++) {
+				txtValue = a[i].textContent || a[i].innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					a[i].style.display = "";
+				} else {
+					a[i].style.display = "none";
+				}
+			}
+		}
+	</script>
 
 
-<script >
-	 const input = document.getElementById('box');
+	<script>
+		const size = document.getElementsByTagName("input").length;
+		for (var i = 0; i < size; i++) {
+			const input = document.getElementsByClassName("box")[i];
 
-	input.addEventListener('click', function onClick(event) {
-  	const input = document.getElementById('box');
+			input.addEventListener('focusin', function onClick(event) {
 
-  	input.style.backgroundColor = 'green';
+				input.style.backgroundColor = 'yellow';
 
-	  // 👇️ optionally change the text color
-	  // input.style.color = 'white';
-});
-</script>
+			});
+			input.addEventListener('focusout', function onClick(event) {
+
+				input.style.backgroundColor = 'white';
+
+			});
+		}
+
+	</script>
 
 </body>
+
 </html>
